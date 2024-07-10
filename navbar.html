@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar-left .logo {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar-center {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-center a {
+            font-size: 16px;
+        }
+
+        .new-badge {
+            background-color: yellow;
+            color: black;
+            font-size: 12px;
+            padding: 2px 4px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+
+        .navbar-right .signup-button {
+            background-color: #0066ff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .navbar-right .signup-button:hover {
+            background-color: #004bb5;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="#" class="logo">Newton School</a>
+        </div>
+        <div class="navbar-center">
+            <a href="#">Data Science & AI</a>
+            <a href="#">B. Tech in CS & AI <span class="new-badge">NEW</span></a>
+            <a href="#">Newton Edge</a>
+            <a href="#">Refer & Earn</a>
+            <a href="#">More</a>
+        </div>
+        <div class="navbar-right">
+            <a href="#" class="signup-button">Sign up</a>
+        </div>
+    </nav>
+</body>
+</html>
